@@ -1,157 +1,180 @@
+
+[13:41, 9/3/2025] Kessily: /* Estilos gerais do corpo da página */
 body {
-    color: black;
-    background-color: #48665A;
-    font-family: Arial, Helvetica, sans-serif;
+    color: black; /* Cor do texto padrão */
+    background-color: #48665A; /* Cor de fundo da página */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão do site */
 }
+
+/* Estilo específico para <h1> dentro do <body> */
 body h1 {
-     font-size: 3em;
-      margin: 0;
-      letter-spacing: 2px;
-      color: black;
-      text-align: center;
-      font-family: 'Trebuchet MS', sans-serif;
-      
+    font-size: 3em; /* Tamanho grande para o título */
+    margin: 0; /* Remove margens externas */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    color: black; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Trebuchet MS', sans-serif; /* Fonte diferente para destaque */
 }
 
+/* Estilo para listas não ordenadas (ul), normalmente para navegação */
 ul {
-    display:flex;
-    justify-content: space-between;
-    list-style-type: none;
-    align-items: center;
-    padding: 16px;
+    display: flex; /* Usa layout flexível */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    list-style-type: none; /* Remove marcadores (bolinhas) */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 16px; /* Espaçamento interno */
 }
 
+/* Estilo para todos os links (a) */
 a {
-    color:#94AA87 ;
-    text-decoration: none;
+    color: #94AA87; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado padrão */
 }
 
-img  {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #7D8675;
+/* Estilo para todas as imagens */
+img {
+    width: 150px; /* Largura fixa */
+    height: 150px; /* Altura fixa */
+    border-radius: 50%; /* Transforma em imagem circular */
+    border: 5px solid #7D8675; /* Borda ao redor da imagem */
 }
 
+/* Classe utilitária para centralizar texto */
 .center {
-    text-align: center;
-
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Estilo global para todos os <h1> */
 h1 {
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
+    color: white; /* Cor branca para o texto */
+    font-size: 36px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
 }
+
+/* Estilo para a classe 'sobre' */
 .sobre {
-    color: white;
-    text-decoration: underline;
-    text-decoration: none;
-    text-align: center;
-    padding: 20px 40px;
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Linha redundante, pois remove o sublinhado */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 40px; /* Espaçamento interno */
 }
 
-body h2{
-    background-color: #7F9189;
-font-family: Arial, sans-serif;
-  padding: 20px;
+/* Estilo para <h2> dentro do body */
+body h2 {
+    background-color: #7F9189; /* Fundo diferente para destacar */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    padding: 20px; /* Espaçamento interno */
 }
 
+/* Estilo global para todos os <h2> */
 h2 {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center; /* Centraliza os títulos */
+    margin-bottom: 20px; /* Espaço abaixo do título */
 }
 
+/* Estilo do formulário */
 form {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: #48665A;
-  padding: 15px;
-  border-radius: 5px;
+    max-width: 400px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    background-color: #48665A; /* Cor de fundo */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
+/* Estilo para os rótulos (labels) */
 label {
-  display: block;
-  margin-top: 10px;
+    display: block; /* Ocupa toda a linha */
+    margin-top: 10px; /* Espaçamento acima */
 }
 
+/* Estilo para campos de entrada e textarea */
 input, textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    padding: 8px; /* Espaçamento interno */
+    margin-top: 5px; /* Espaço acima do campo */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 3px; /* Bordas levemente arredondadas */
 }
 
+/* Estilo dos botões */
 button {
-  margin-top: 15px;
-  padding: 10px;
-  background-color: #133326;
-  border: none;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 3px;
+    margin-top: 15px; /* Espaço acima do botão */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #133326; /* Cor de fundo escura */
+    border: none; /* Remove borda padrão */
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    cursor: pointer; /* Muda cursor ao passar por cima */
+    border-radius: 3px; /* Bordas arredondadas */
 }
 
+/* Efeito ao passar o mouse sobre o botão */
 button:hover {
-  background-color: #7F9189;
+    background-color: #7F9189; /* Cor de fundo ao passar o mouse */
 }
 
+/* Contêiner dos produtos */
 .produtos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 20px;
-  padding: 30px;
-  align-items: flex-start;
+    display: flex; /* Layout flexível */
+    flex-wrap: wrap; /* Quebra linha quando necessário */
+    justify-content: flex-start; /* Alinha à esquerda */
+    gap: 20px; /* Espaço entre os itens */
+    padding: 30px; /* Espaçamento interno */
+    align-items: flex-start; /* Alinha ao topo */
 }
 
+/* Estilo de cada produto */
 .produto {
-  background-color: #7F9189;
-  padding: 15px;
-  border-radius: 10px;
-  width: 220px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align:center;
+    background-color: #7F9189; /* Fundo cinza claro */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 220px; /* Largura fixa */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra leve */
+    text-align: center; /* Centraliza conteúdo */
 }
 
+/* Estilo das imagens dos produtos */
 .produto img {
-  width: 80%;
-  max-width: 80%;
-  height: auoto;
-  border-radius: 8px;
-  border: none;
-  display: block;
-  justify-content: flex-start;
-  align-items: flex-start;
-  transition: transform 0.3s ease;
+    width: 80%; /* 80% da largura do contêiner */
+    max-width: 80%; /* Garante limite */
+    height: auto
+    border-radius: 8px; /* Bordas arredondadas */
+    border: none; /* Sem borda */
+    display: block; /* Exibe como bloco */
+    justify-content: flex-start; /* Inútil aqui em imagens */
+    align-items: flex-start; /* Também não afeta imagens */
+    transition: transform 0.3s ease; /* Transição suave para animação */
 }
 
+/* Efeito de zoom ao passar o mouse sobre a imagem */
 .produto img:hover {
-  transform: scale(1.2);
+    transform: scale(1.2); /* Aumenta em 20% */
 }
 
-.produto h2{
-  background: none;
-  padding: 0%;
-  margin-bottom: 0;
-}
-.produto button{
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 25px;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 0%;
-}
-.preço{
-  margin-bottom: 0;
-  padding-bottom: 0%;
-  font-size: 2em;
-  font-weight: 700;
-  margin-top: 0%;
+/* Título dos produtos */
+.produto h2 {
+    background: none; /* Remove fundo */
+    padding: 0%; /* Remove padding */
+    margin-bottom: 0; /* Remove margem inferior */
 }
 
+/* Botão dos produtos */
+.produto button {
+    background-color: #4CAF50; /* Verde */
+    color: white; /* Texto branco */
+    padding: 12px 25px; /* Tamanho do botão */
+    font-weight: bold; /* Negrito */
+    display: inline-block; /* Permite margens laterais */
+    margin-top: 0%; /* Remove margem superior */
+}
+
+/* Preço do produto */
+.preço {
+    margin-bottom: 0; /* Remove espaço inferior */
+    padding-bottom: 0%; /* Remove padding inferior */
+    font-size: 2em; /* Tamanho grande */
+    font-weight: 700; /* Negrito */
+    margin-top: 0%; /* Remove margem superior */
+}
 
