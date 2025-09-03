@@ -1,5 +1,5 @@
 
-[13:41, 9/3/2025] Kessily: /* Estilos gerais do corpo da página */
+/* Estilos gerais do corpo da página */
 body {
     color: black; /* Cor do texto padrão */
     background-color: #48665A; /* Cor de fundo da página */
@@ -177,4 +177,5 @@ button:hover {
     font-weight: 700; /* Negrito */
     margin-top: 0%; /* Remove margem superior */
 }
+
 
