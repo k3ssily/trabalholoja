@@ -1,74 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosso estoque</title>
-    <link rel="stylesheet" href="index.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nosso Estoque</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    <header>
+    
+  <nav role="navigation" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+    
+  <header class="produtos-header">
     <h1>Veja nosso estoque</h1>
   </header>
-
-    <main class="produtos"> 
-        <div class="produto">
-        <img src="./img/sapatosocialtrabalho.jpg" alt="sapato social masculino">
+    
+  <main role="main">
+    <section class="produtos">
+      <article class="produto">
+        <img src="./img/sapatosocialtrabalho.jpg" alt="Sapato social masculino" />
         <h2>Sapato social masculino</h2>
         <p class="preço">R$194,90</p>
         <button>Comprar</button>
-        </div>
+      </article>
 
-        <div class="produto">
-        <img src="./img/sapatofemininotrabalho.jpg" alt="sapato social feminino">
+      <article class="produto">
+        <img src="./img/sapatofemininotrabalho.jpg" alt="Sapato social feminino" />
         <h2>Sapato social feminino</h2>
         <p class="preço">R$199,90</p>
         <button>Comprar</button>
-        </div>
+      </article>
 
-        <div class="produto">
-        <img src="./img/tenisjordanunissex.webp" alt="Jordan unissex">
+      <article class="produto">
+        <img src="./img/tenisjordanunissex.webp" alt="Jordan unissex" />
         <h2>Jordan unissex</h2>
         <p class="preço">R$150,90</p>
         <button>Comprar</button>
-        </div>
-        
-        <div class="produto">
-        <img src="./img/tenisunissextrabalho.jpg" alt="tênis esportivo unissex">
+      </article>
+
+      <article class="produto">
+        <img src="./img/tenisunissextrabalho.jpg" alt="Tênis esportivo unissex" />
         <h2>Tênis esportivo unissex</h2>
         <p class="preço">R$100,00</p>
         <button>Comprar</button>
-        </div>
-        
-        <div class="produto">
-        <img src="./img/tenisvansoldskoolpreto.jpeg" alt="Tênis vans">
+      </article>
+
+      <article class="produto">
+        <img src="./img/tenisvansoldskoolpreto.jpeg" alt="Tênis vans" />
         <h2>Tênis vans</h2>
         <p class="preço">R$90,00</p>
         <button>Comprar</button>
-        </div>
-        
-        <div class="produto">
-        <img src="./img/nikedunkblack.webp" alt="nike dunk">
-        <h2>nike dunk</h2>
+      </article>
+
+      <article class="produto">
+        <img src="./img/nikedunkblack.webp" alt="Nike dunk" />
+        <h2>Nike dunk</h2>
         <p class="preço">R$170,00</p>
         <button>Comprar</button>
-        </div>
+      </article>
 
-        <div class="produto">
-        <img src="./img//alllstar.webp" alt="All star">
+      <article class="produto">
+        <img src="./img/alllstar.webp" alt="All star" />
         <h2>All star</h2>
         <p class="preço">R$120,00</p>
         <button>Comprar</button>
-        </div>
-        <div class="produto">
-        <img src="./img//texana.webp" alt="bota texana">
-        <h2>bota texana</h2>
+      </article>
+
+      <article class="produto">
+        <img src="./img/texana.webp" alt="Bota texana" />
+        <h2>Bota texana</h2>
         <p class="preço">R$100,00</p>
         <button>Comprar</button>
-        </div>
-
-
+      </article>
+    </section>
+  </main>
     
+  <footer role="contentinfo">
+    <p>&copy; 2025 Loja de Calçados. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>
