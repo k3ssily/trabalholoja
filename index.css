@@ -1,181 +1,234 @@
 
-/* Estilos gerais do corpo da página */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%; /* importante para flex na body */
+}
+
 body {
-    color: black; /* Cor do texto padrão */
-    background-color: #48665A; /* Cor de fundo da página */
-    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão do site */
+  color: black;
+  background-color: #48665A;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
-/* Estilo específico para <h1> dentro do <body> */
-body h1 {
-    font-size: 3em; /* Tamanho grande para o título */
-    margin: 0; /* Remove margens externas */
-    letter-spacing: 2px; /* Espaçamento entre letras */
-    color: black; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-    font-family: 'Trebuchet MS', sans-serif; /* Fonte diferente para destaque */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 16px;
+  background-color: #7F9189;
+  gap: 20px;
 }
 
-/* Estilo para listas não ordenadas (ul), normalmente para navegação */
-ul {
-    display: flex; /* Usa layout flexível */
-    justify-content: space-between; /* Espaça os itens igualmente */
-    list-style-type: none; /* Remove marcadores (bolinhas) */
-    align-items: center; /* Alinha os itens verticalmente */
-    padding: 16px; /* Espaçamento interno */
+nav ul li a {
+  color: #94AA87;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Estilo para todos os links (a) */
-a {
-    color: #94AA87; /* Cor dos links */
-    text-decoration: none; /* Remove o sublinhado padrão */
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
-/* Estilo para todas as imagens */
-img {
-    width: 150px; /* Largura fixa */
-    height: 150px; /* Altura fixa */
-    border-radius: 50%; /* Transforma em imagem circular */
-    border: 5px solid #7D8675; /* Borda ao redor da imagem */
+header.center {
+  text-align: center;
+  padding: 20px 0;
 }
 
-/* Classe utilitária para centralizar texto */
-.center {
-    text-align: center; /* Centraliza o texto */
+header.center img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #7D8675;
 }
 
-/* Estilo global para todos os <h1> */
-h1 {
-    color: white; /* Cor branca para o texto */
-    font-size: 36px; /* Tamanho do texto */
-    font-weight: bold; /* Negrito */
+.banner {
+  font-size: 3em;
+  letter-spacing: 2px;
+  color: black;
+  text-align: center;
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 30px 0;
 }
 
-/* Estilo para a classe 'sobre' */
 .sobre {
-    color: white; /* Cor do texto */
-    text-decoration: none; /* Linha redundante, pois remove o sublinhado */
-    text-align: center; /* Centraliza o texto */
-    padding: 20px 40px; /* Espaçamento interno */
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  text-align: center;
+  line-height: 1.6;
 }
 
-/* Estilo para <h2> dentro do body */
-body h2 {
-    background-color: #7F9189; /* Fundo diferente para destacar */
-    font-family: Arial, sans-serif; /* Fonte padrão */
-    padding: 20px; /* Espaçamento interno */
+/* Títulos */
+h1, h2 {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-/* Estilo global para todos os <h2> */
 h2 {
-    text-align: center; /* Centraliza os títulos */
-    margin-bottom: 20px; /* Espaço abaixo do título */
+  background-color: #7F9189;
+  padding: 20px;
+  margin-top: 30px;
 }
 
-/* Estilo do formulário */
 form {
-    max-width: 400px; /* Largura máxima */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    background-color: #48665A; /* Cor de fundo */
-    padding: 15px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas arredondadas */
+  max-width: 400px;
+  margin: 20px auto 40px;
+  background-color: #48665A;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
 }
 
-/* Estilo para os rótulos (labels) */
 label {
-    display: block; /* Ocupa toda a linha */
-    margin-top: 10px; /* Espaçamento acima */
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-/* Estilo para campos de entrada e textarea */
 input, textarea {
-    width: 100%; /* Ocupa toda a largura do contêiner */
-    padding: 8px; /* Espaçamento interno */
-    margin-top: 5px; /* Espaço acima do campo */
-    box-sizing: border-box; /* Inclui padding na largura total */
-    border: 1px solid #ccc; /* Borda cinza clara */
-    border-radius: 3px; /* Bordas levemente arredondadas */
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
-/* Estilo dos botões */
 button {
-    margin-top: 15px; /* Espaço acima do botão */
-    padding: 10px; /* Espaçamento interno */
-    background-color: #133326; /* Cor de fundo escura */
-    border: none; /* Remove borda padrão */
-    color: white; /* Cor do texto */
-    font-weight: bold; /* Negrito */
-    cursor: pointer; /* Muda cursor ao passar por cima */
-    border-radius: 3px; /* Bordas arredondadas */
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #133326;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 100%;
 }
 
-/* Efeito ao passar o mouse sobre o botão */
 button:hover {
-    background-color: #7F9189; /* Cor de fundo ao passar o mouse */
+  background-color: #7F9189;
 }
 
-/* Contêiner dos produtos */
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #48665A;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
 .produtos {
-    display: flex; /* Layout flexível */
-    flex-wrap: wrap; /* Quebra linha quando necessário */
-    justify-content: flex-start; /* Alinha à esquerda */
-    gap: 20px; /* Espaço entre os itens */
-    padding: 30px; /* Espaçamento interno */
-    align-items: flex-start; /* Alinha ao topo */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* centraliza os produtos em linha */
+  padding: 0 20px 40px 20px;
+  background-color: #48665A;
+  /* Removi o align-items flex-start para evitar que eles fiquem desalinhados verticalmente */
 }
 
-/* Estilo de cada produto */
 .produto {
-    background-color: #7F9189; /* Fundo cinza claro */
-    padding: 15px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas */
-    width: 220px; /* Largura fixa */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra leve */
-    text-align: center; /* Centraliza conteúdo */
+  background-color: #7F9189;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 220px;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* Estilo das imagens dos produtos */
 .produto img {
-    width: 80%; /* 80% da largura do contêiner */
-    max-width: 80%; /* Garante limite */
-    height: auto
-    border-radius: 8px; /* Bordas arredondadas */
-    border: none; /* Sem borda */
-    display: block; /* Exibe como bloco */
-    justify-content: flex-start; /* Inútil aqui em imagens */
-    align-items: flex-start; /* Também não afeta imagens */
-    transition: transform 0.3s ease; /* Transição suave para animação */
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
 }
 
-/* Efeito de zoom ao passar o mouse sobre a imagem */
 .produto img:hover {
-    transform: scale(1.2); /* Aumenta em 20% */
+  transform: scale(1.05);
 }
 
-/* Título dos produtos */
+
 .produto h2 {
-    background: none; /* Remove fundo */
-    padding: 0%; /* Remove padding */
-    margin-bottom: 0; /* Remove margem inferior */
+  font-size: 1.1rem;
+  margin: 10px 0 5px 0;
+  color: #fff;
 }
 
-/* Botão dos produtos */
-.produto button {
-    background-color: #4CAF50; /* Verde */
-    color: white; /* Texto branco */
-    padding: 12px 25px; /* Tamanho do botão */
-    font-weight: bold; /* Negrito */
-    display: inline-block; /* Permite margens laterais */
-    margin-top: 0%; /* Remove margem superior */
-}
 
-/* Preço do produto */
 .preço {
-    margin-bottom: 0; /* Remove espaço inferior */
-    padding-bottom: 0%; /* Remove padding inferior */
-    font-size: 2em; /* Tamanho grande */
-    font-weight: 700; /* Negrito */
-    margin-top: 0%; /* Remove margem superior */
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #fff;
 }
+
+
+.produto button {
+  background-color: #133326;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.produto button:hover {
+  background-color: #4CAF50;
+}
+
+
+footer {
+  background-color: #7F9189;
+  text-align: center;
+  padding: 15px 10px;
+  color: black;
+  font-weight: bold;
+  margin-top: auto; 
+}
+
+@media (max-width: 768px) {
+  .produtos {
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .banner {
+    font-size: 2em;
+  }
+
+  header.center img {
+    width: 120px;
+    height: 120px;
+  }
+
+
 
 
